@@ -10,7 +10,7 @@ func _ready():
 func _on_body_entered(body):
 	# On vérifie si c'est bien le joueur
 	if body.name == "Player":
-		if next_room_path != "":
+		if next_room_path != "" and FileAccess.file_exists(next_room_path):
 			get_tree().change_scene_to_file(next_room_path)
 		else:
 			print("Oups ! Tu as oublié de choisir la scène de destination dans l'inspecteur.")
