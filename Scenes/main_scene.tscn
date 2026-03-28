@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cvfrlbkonn0ws"]
 
-[ext_resource type="PackedScene" path="res://Scenes/Player.tscn" id="2_6l7je"]
+[ext_resource type="PackedScene" uid="uid://dx81qhjha2xsd" path="res://Scenes/Player.tscn" id="2_6l7je"]
 [ext_resource type="Texture2D" uid="uid://fe56k33v1epa" path="res://Assets/kenney_tiny-dungeon/Tilemap/tilemap_packed.png" id="2_jv6wh"]
 [ext_resource type="PackedScene" uid="uid://d382aibri0rf7" path="res://Scenes/door.tscn" id="3_jv6wh"]
 
@@ -152,7 +152,7 @@ sources/0 = SubResource("TileSetAtlasSource_x6ack")
 [node name="main_scene" type="Node2D" unique_id=1813279419]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=558096056]
-zoom = Vector2(2.2, 2.2)
+zoom = Vector2(5, 5)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=176376861]
 tile_set = SubResource("TileSet_iacmt")
