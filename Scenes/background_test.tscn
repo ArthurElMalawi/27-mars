@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bmuk0ckc4x5ej"]
+
+[ext_resource type="Texture2D" uid="uid://ofr1yeaoded1" path="res://Assets/kenney_tiny-dungeon/Tiles/tile_0000.png" id="1_0fe08"]
+
+[node name="BackgroundTest" type="Node2D" unique_id=1939921287]
+
+[node name="Tile0000" type="Sprite2D" parent="." unique_id=1604566776]
+position = Vector2(2, 4.5)
+scale = Vector2(13.625, 11.1875)
+texture = ExtResource("1_0fe08")
