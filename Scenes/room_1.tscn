@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dw4lah0qy6ut8" path="res://Assets/craftpix-net-169442-free-2d-top-down-pixel-dungeon-asset-pack/PNG/walls_floor.png" id="2_uu0ng"]
 [ext_resource type="Texture2D" uid="uid://djjdxuxa1nwrh" path="res://Assets/craftpix-net-169442-free-2d-top-down-pixel-dungeon-asset-pack/Tiled_files/doors_lever_chest_animation.png" id="3_gn78r"]
 [ext_resource type="Texture2D" uid="uid://c1bynv48xdbi6" path="res://Assets/craftpix-net-169442-free-2d-top-down-pixel-dungeon-asset-pack/Tiled_files/decorative_cracks_walls.png" id="4_uu0ng"]
+[ext_resource type="PackedScene" uid="uid://qtcuhvomeiaj" path="res://Scenes/Slime_blue.tscn" id="6_gn78r"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_uu0ng"]
 tile_data = PackedInt32Array(0, 131073, 14)
@@ -1224,3 +1225,6 @@ layer_3/z_index = 2
 layer_3/tile_data = PackedInt32Array(-589825, 327681, 18, -524289, 327681, 19, -458753, 327681, 20, -655360, 393217, 18, -589824, 393217, 19, -524288, 393217, 20)
 
 [node name="Player" parent="." unique_id=1760262629 instance=ExtResource("2_isvj2")]
+
+[node name="Slime_blue" parent="." unique_id=836390071 instance=ExtResource("6_gn78r")]
+position = Vector2(-176, -68)

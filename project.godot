@@ -15,6 +15,11 @@ run/main_scene="uid://cvfrlbkonn0ws"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[global_group]
+
+player=""
+enemy=""
+
 [input]
 
 ui_left={

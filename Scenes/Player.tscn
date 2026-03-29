@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://dx81qhjha2xsd"]
 
 [ext_resource type="Script" uid="uid://creicpha8yi0o" path="res://Scripts/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://c38ktrf1sewww" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_attack_with_shadow.png" id="2_yoq75"]
-[ext_resource type="Texture2D" uid="uid://puhl2nc4cyag" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Death_with_shadow.png" id="3_ksbbd"]
-[ext_resource type="Texture2D" uid="uid://fcqq30krb8bi" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Hurt_with_shadow.png" id="4_glx4g"]
-[ext_resource type="Texture2D" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/Without_shadow/Swordsman_lvl1_Run_Attack_without_shadow.png" id="6_miouo"]
-[ext_resource type="Texture2D" uid="uid://cvhbuts4ks0ol" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Run_Attack_with_shadow.png" id="6_o3h8g"]
-[ext_resource type="Texture2D" uid="uid://dbgnhuhw8rflb" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Idle_with_shadow.png" id="6_yoq75"]
-[ext_resource type="Texture2D" uid="uid://d3pj8insvxsaf" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Run_with_shadow.png" id="8_1e7my"]
-[ext_resource type="Texture2D" uid="uid://dhgodo71xo71r" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Walk_Attack_with_shadow.png" id="9_arntx"]
-[ext_resource type="Texture2D" uid="uid://cjpryhqouaj70" path="res://Assets/swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Walk_with_shadow.png" id="10_lslt6"]
+[ext_resource type="Texture2D" uid="uid://c38ktrf1sewww" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_attack_with_shadow.png" id="2_yoq75"]
+[ext_resource type="Texture2D" uid="uid://puhl2nc4cyag" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Death_with_shadow.png" id="3_ksbbd"]
+[ext_resource type="Texture2D" uid="uid://fcqq30krb8bi" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Hurt_with_shadow.png" id="4_glx4g"]
+[ext_resource type="Texture2D" uid="uid://demwituwksi8t" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/Without_shadow/Swordsman_lvl1_Run_Attack_without_shadow.png" id="6_miouo"]
+[ext_resource type="Texture2D" uid="uid://cvhbuts4ks0ol" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Run_Attack_with_shadow.png" id="6_o3h8g"]
+[ext_resource type="Texture2D" uid="uid://dbgnhuhw8rflb" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Idle_with_shadow.png" id="6_yoq75"]
+[ext_resource type="Texture2D" uid="uid://d3pj8insvxsaf" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Run_with_shadow.png" id="8_1e7my"]
+[ext_resource type="Texture2D" uid="uid://dhgodo71xo71r" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Walk_Attack_with_shadow.png" id="9_arntx"]
+[ext_resource type="Texture2D" uid="uid://cjpryhqouaj70" path="res://Assets/craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character/PNG/Swordsman_lvl1/With_shadow/Swordsman_lvl1_Walk_with_shadow.png" id="10_lslt6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ulo2v"]
 atlas = ExtResource("2_yoq75")
@@ -1914,15 +1914,24 @@ animations = [{
 radius = 6.0
 height = 26.0
 
-[node name="Player" type="CharacterBody2D" unique_id=1760262629]
+[sub_resource type="CircleShape2D" id="CircleShape2D_yoq75"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1760262629 groups=["player"]]
 z_index = 1
 script = ExtResource("1_kyqiw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=824207075]
 sprite_frames = SubResource("SpriteFrames_3krlc")
-animation = &"walk_up"
-frame = 2
-frame_progress = 0.73306555
+animation = &"hurt_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2048979773]
 shape = SubResource("CapsuleShape2D_kyqiw")
+
+[node name="AttackHitbox" type="Area2D" parent="." unique_id=1241249815]
+collision_layer = 2
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=1615749206]
+position = Vector2(-4, 0)
+shape = SubResource("CircleShape2D_yoq75")
