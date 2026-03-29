@@ -16,10 +16,10 @@ var is_hurt = false
 var knockback_velocity = Vector2.ZERO
 
 const ATTACK_CONFIG = {
-	"down":  {"pos": Vector2(0, 35),  "rot": 0.0},
-	"up":    {"pos": Vector2(0, -35), "rot": 0.0},
-	"left":  {"pos": Vector2(-35, 0), "rot": PI / 2},
-	"right": {"pos": Vector2(35, 0),  "rot": PI / 2}
+	"down":  {"pos": Vector2(0, 20),  "rot": 0.0},
+	"up":    {"pos": Vector2(0, -20), "rot": 0.0},
+	"left":  {"pos": Vector2(-20, 0), "rot": PI / 2},
+	"right": {"pos": Vector2(20, 0),  "rot": PI / 2}
 }
 
 func _ready():
