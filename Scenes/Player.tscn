@@ -1685,24 +1685,22 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyqiw"]
-radius = 6.0
-height = 26.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_megsn"]
+size = Vector2(13, 5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yoq75"]
 height = 20.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1760262629 groups=["player"]]
-z_index = 1
 script = ExtResource("1_kyqiw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=824207075]
-z_index = 3
 sprite_frames = SubResource("SpriteFrames_3krlc")
 animation = &"attack_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2048979773]
-shape = SubResource("CapsuleShape2D_kyqiw")
+position = Vector2(-1, 10.5)
+shape = SubResource("RectangleShape2D_megsn")
 
 [node name="AttackHitbox" type="Area2D" parent="." unique_id=1241249815]
 collision_layer = 2
@@ -1710,4 +1708,5 @@ collision_mask = 2
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=1615749206]
+visible = false
 shape = SubResource("CapsuleShape2D_yoq75")
