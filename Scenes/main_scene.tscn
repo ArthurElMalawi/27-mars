@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dx81qhjha2xsd" path="res://Scenes/Player.tscn" id="2_6l7je"]
 [ext_resource type="Texture2D" uid="uid://fe56k33v1epa" path="res://Assets/kenney_tiny-dungeon/Tilemap/tilemap_packed.png" id="2_jv6wh"]
-[ext_resource type="PackedScene" uid="uid://d382aibri0rf7" path="res://Scenes/door.tscn" id="3_jv6wh"]
+[ext_resource type="PackedScene" uid="uid://cic07y608cisu" path="res://Scenes/door.tscn" id="3_jv6wh"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6l7je"]
 
